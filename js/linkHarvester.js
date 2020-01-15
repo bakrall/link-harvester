@@ -3,9 +3,7 @@
 
 (function(){
 	function bindUiEvents() {
-		$('#file-upload').change( function() { 
-			console.log(this.files);
-
+		$('#file-upload').change( function() {
 			renderLinks(this.files[0]);
 		});
 	}
