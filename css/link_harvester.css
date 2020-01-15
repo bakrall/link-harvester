@@ -31,7 +31,7 @@ h1 {
   height: 1px;
   overflow: hidden;
   padding: 0;
-  position: absolute !important;
+  position: absolute;
   white-space: nowrap;
   width: 1px;
 }
