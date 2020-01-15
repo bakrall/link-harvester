@@ -1,0 +1,77 @@
+html {
+	font-size: 16px;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	height: calc(100vh - 5rem);
+	margin: 5rem 0 0;
+	background-color: #007da1;
+}
+
+h1 {
+	padding: 0 0.4rem;
+}
+
+.form-wrapper {
+	display: inline-block;
+}
+
+.link-harvester-form fieldset {
+	margin: 0;
+	border: 0;
+	padding: 0;
+	color: #fff;
+}
+
+#file-upload {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute !important;
+  white-space: nowrap;
+  width: 1px;
+}
+ 
+#file-upload + label {
+  background-color: #12312b;
+  border-radius: 4rem;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  padding: 1rem 2rem;
+  box-shadow: 0 0 3px #12312b;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+}
+  
+#file-upload:focus + label,
+#file-upload + label:hover {
+    background-color: #06425b;
+}
+  
+#file-upload:focus + label {
+  outline: 1px dotted #000;
+}
+
+.links-container {
+	margin-top: 1.25rem;
+	list-style: none;
+	padding: 0 0 0 5px;
+	font-size: 1.3rem;
+	position: absolute;
+}
+
+.links-container a {
+	color: #12312b;
+	font-weight: bold;
+}
+
+.link-item {
+	margin: 5px 0;
+}
