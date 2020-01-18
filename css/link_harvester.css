@@ -15,8 +15,11 @@ h1 {
 }
 
 .form-wrapper {
-	display: inline-block;
-}
+	display: flex;
+  	flex-wrap: wrap;
+  	flex-direction: column;
+  	align-items: center;
+}	
 
 .link-harvester-form fieldset {
 	margin: 0;
@@ -64,11 +67,10 @@ h1 {
 	list-style: none;
 	padding: 0 0 0 5px;
 	font-size: 1.3rem;
-	position: absolute;
 }
 
 .links-container a {
-	color: #12312b;
+	color: #000;
 	font-weight: bold;
 }
 

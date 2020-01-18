@@ -2,6 +2,8 @@
 //https://developer.mozilla.org/en-US/docs/Web/API/FileReader
 
 (function(){
+	'use strict';
+	
 	function bindUiEvents() {
 		$('#file-upload').change( function() {
 			renderLinks(this.files[0]);
