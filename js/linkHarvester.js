@@ -3,9 +3,11 @@
 
 (function(){
 	'use strict';
+
+	const $fileUploadInput = $('#file-upload');
 	
 	function bindUiEvents() {
-		$('#file-upload').change( function() {
+		$fileUploadInput.change( function() {
 			renderLinks(this.files[0]);
 		});
 	}
@@ -16,7 +18,7 @@
 
 		reader.onload = function(event) {
 			const text = event.target.result,
-				pattern = /(<a.+)(<\/a>)/gm,
+				pattern = /(<a.+)\n?(<\/a>)/gm,
 				links = text.match(pattern);
 
 			$linksContainer.empty();
@@ -29,6 +31,8 @@
 		}
 
 		reader.readAsText(file);
+		$fileUploadInput.val('');
+
 	}
 
 	bindUiEvents();
