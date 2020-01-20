@@ -18,7 +18,7 @@
 
 		reader.onload = function(event) {
 			const text = event.target.result,
-				pattern = /<a(?!r)([\s\S]*?)<\/a>/g, /* without negative lookahead (?!r) the pattern would also match <article> 
+				pattern = /<a(?!r).*?<\/a>/gs, /* without negative lookahead (?!r) the pattern would also match <article> 
 														without ? in [\s\S]*? the regex would be greedy */
 				links = text.match(pattern);
 
